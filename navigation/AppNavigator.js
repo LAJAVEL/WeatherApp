@@ -15,10 +15,10 @@ import SearchScreen from '../screens/SearchScreen';
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
 
+// Définition du Tab Navigator pour la barre de navigation en bas
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-      id="MainTabNavigator"
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color, size }) => {
           let icon;
@@ -39,11 +39,14 @@ const TabNavigator = () => {
   );
 };
 
+// Définition du Drawer Navigator pour le menu burger
 const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator id="MainDrawerNavigator">
-        <Drawer.Screen name="Main" component={TabNavigator} />
+      <Drawer.Navigator>
+        <Drawer.Screen name="Accueil" component={TabNavigator} />
+        <Drawer.Screen name="Pluie" component={RainForecastScreen} />
+        <Drawer.Screen name="Recherche" component={SearchScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

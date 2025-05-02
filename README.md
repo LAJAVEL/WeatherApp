@@ -1,9 +1,13 @@
 # WeatherApp
 
-Pour lancer l'application :
+Application mobile de météo développée avec React Native et Expo.
 
-1. Cloner ou décompresser le projet :
-   ```bash
+## Lancer l'application
+
+1. Cloner ou décompresser le projet et naviguer dans le dossier :
+
+   git clone https://github.com/LAJAVEL/WeatherApp.git
+
    cd WeatherApp
    
 # Installer les dependances :
@@ -14,4 +18,3 @@ npm install
 
 npx expo start --clear
 
-ou npm start
